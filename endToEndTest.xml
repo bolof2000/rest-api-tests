@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="conduitapi.utilities.Listeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/Volumes/DevelopmentEnv/End-to-end-API-Automation/End-to-end-API-Automation/src/test/java/conduitapi/testCases/">
+        <classes>
+            <class name="conduitapi.testCases.TC001_Get_All_Tags">
+                <methods>
+                    <include name="validateResponseBody"/>
+                    <include name="validateStatusCode"/>
+                    <include name="checkStatusLine"/>
+                </methods>
+            </class>
+            <class name="conduitapi.testCases.TC001_Post_User_Login_Test">
+                <methods>
+                    <include name="checkResponseBody"/>
+                    <include name="checkContentType"/>
+                    <include name="checkEncoding"/>
+                    <include name="checkServerType"/>
+                </methods>
+            </class>
+            <class name="conduitapi.testCases.TC001_User_SignUp_Test">
+                <methods>
+                    <include name="validateresponseBody"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

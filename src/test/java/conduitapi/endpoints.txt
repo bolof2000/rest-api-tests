@@ -1,0 +1,8 @@
+POST :  https://conduit.productionready.io/api/users     SignUp 
+
+path : /api/users
+
+
+POST : https://conduit.productionready.io/api/articles/     Create article request
+
+https://conduit.productionready.io/api/users/login    --- Sign In request

@@ -1,0 +1,34 @@
+TC:
+Get all employee Data
+Get a single employee data
+Create new record in DB
+Update an employee record
+delete an employee record
+
+Validations :
+Status Code
+Status Line
+Content Type
+Content Encoding
+Content Length
+
+HTTP Request Type
+Get
+POST --- requires request body
+PUT --- Requires request body
+DELETE
+
+ Design
+ Identify common functionalities across all test cases and define a test Base to handle that common functionalities
+
+ Phases of Automation
+
+Design and development of framework
+Executions
+Maintenance
+
+
+
+
+ 
+
