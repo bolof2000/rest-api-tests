@@ -24,7 +24,7 @@ public class TC001_User_SignUp_Test  {
     public static void signUpTestSetUp() throws IOException, InterruptedException {
        // RestAssured.baseURI = "https://conduit.productionready.io/api/";
         httpRequest = RestAssured.given();
-        FileInputStream files = new FileInputStream(new File("/Volumes/DevelopmentEnv/End-to-end-API-Automation/End-to-end-API-Automation/src/test/java/conduitapi/test-data/signup.json"));
+        FileInputStream files = new FileInputStream(new File("signup.json"));
         System.out.println(files.toString());
         httpRequest.header("Content-Type","application/json");
         httpRequest.body(IOUtils.toString(files,"UTF-8"));

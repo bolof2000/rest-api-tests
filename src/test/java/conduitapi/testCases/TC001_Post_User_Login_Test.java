@@ -22,7 +22,7 @@ import java.io.IOException;
 public class TC001_Post_User_Login_Test extends TestBase {
     @BeforeClass
    public static void  createLogin() throws InterruptedException, IOException {
-        FileInputStream files = new FileInputStream(new File("/Volumes/DevelopmentEnv/End-to-end-API-Automation/End-to-end-API-Automation/src/test/java/conduitapi/test-data/signup.json"));
+        FileInputStream files = new FileInputStream(new File("signup.json"));
         httpRequest.body(IOUtils.toString(files));
         response = httpRequest.request(Method.POST,"users");
         Thread.sleep(5);
